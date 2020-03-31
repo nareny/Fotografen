@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Om Oss</title>
+    <!--language setup-->
+    <meta charset="utf-8">
+    <!--bootstrap 4 - designed to be responsive to mobile devices. Proper render and zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body style="background-color: teal;" onload="startTime()">
+
+        <div class="topnav">
+            <a class="active" href="index.html">Hjem</a>
+            <a href="registrerDeg.html">Registrer Deg</a>
+            <a href="oppdrag.html">Oppdrag</a>
+            <a href="omOss.html">Om Oss</a>
+            <a href="frequentlyAskedQuestions.html">FAQ</a>
+
+            <nav class="navbar navbar-expand-sm navbar-dark" id="søkebar">
+              <form class="form-inline"></form>
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Søk</button>
+          </nav>
+  
+
+            <div id="klokke" style="float: right;">
+                <a href=# id="txt" style="color: white;"></a>
+            </div>
+        </div>
+            <br>
+            <br>
+        <!--Bulding the FAQ form-->
+        <h1 style="color: white; " style="font-family: 'Times New Roman', Times, serif;" id="ofte">Ofte stilte spørsmål</h1>
+        <div id="accordion" >
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Koster det noe å bruke denne tjenesten?
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Det er helt gratis for både fotografer og kunder å ta i bruk denne tjenesten. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   Hvor lenge kan vi ha annonsene ute (kunder)?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Med en gang annonsene publiseres, kommer de til å være ute på portalen i 60 dager.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Er min informasjon lagret på sikret måte?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Det skal det være! Vi følger persovernsreglene og GDPR.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        
+
+        <div class="footer">
+            © 2020 Copyright: Fotografen
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
