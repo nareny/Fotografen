@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--language setup-->
+    <meta charset="utf-8">
+    <!--bootstrap 4 - designed to be responsive to mobile devices. Proper render and zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <title>
+        Fotografen
+    </title>
+
+</head>
+<body style="background-color: teal;" onload="startTime()">
+
+    
+
+    <div class="topnav">
+        <a class="active" href="index.html">Hjem</a>
+        <a href="registrerDeg.html">Registrer Deg</a>
+        <a href="oppdrag.html">Oppdrag</a>
+        <a href="omOss.html">Om Oss</a>
+        <a href="frequentlyAskedQuestions.html">FAQ</a>
+
+        <nav class="navbar navbar-expand-sm  navbar-dark" id="søkebar">
+            <form class="form-inline"></form>
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Søk</button>
+        </nav>
+
+        
+        <div id="klokke" style="float: right;">
+            <a href=# id="txt" style="color: white;"></a>
+        </div>
+        
+    </div>
+    <br>
+    <br>
+    <!--Registreringsskjema-->
+
+    <div id="mainInnlogging" class="container" style="background-color: teal;">
+        <h2 style="color: white;">Registrer deg:</h2>
+        <div class="form-group">
+            <label for="text" style="color: white;">Fornavn:</label>
+            <input type="text" class="form-control" id="fornavn" placeholder="Skriv inn fornavn" name="fnavn">
+        </div>
+        <div class="form-group">
+            <label for="text" style="color:white;">Etternavn</label>
+            <input type="text" class="form-control" id="etternavn" placeholder="Skriv inn etternavn" navn="enavn">
+        </div>
+        <form method="post">
+            <div class="form-group">
+                <label class="control-label" for="date">Dato:</label>
+                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+            </div>
+        </form>
+        <div class="form-group">
+            <label for="email" style="color: white;">Epost:</label>
+            <input type="email" class="form-control" id="email" placeholder="Skriv inn epost" name="email">
+        </div>
+        <div class="form-group">
+            <label for="pwd" style="color: white;">Passord:</label>
+            <input type="password" class="form-control" placeholder="Skriv inn passord" id="pwd">
+        </div>
+        <div class="form-group">
+            <label for="pwd" style="color: white;">Gjenta passord:</label>
+            <input type="password" class="form-control" placeholder="Gjenta valgt passord" id="pwdRepeat">
+        </div>
+        <div class="form-group">
+            <label for="kundeValg">Velg profiltype:</label>
+          
+            <select id="valg">
+                <option value="fotograf">Fotograf</option>
+                <option value="kunde">Kunde</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="portfolio" style="color: white;">Portefølje (<i>Kun fotografer</i>):</label>
+            <input type="text" class="form-control" id="portfolioT" placeholder="Legg inn link til din portefølje" name="portfolioL">
+        </div>
+
+        <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember">Husk meg
+            </label>
+        </div>
+
+        
+        <a href="minprofil.html" type="button" class="btn btn-dark" role="button">Registrer deg</a>
+    </div>
+
+    
+
+   <div class="footer">
+    © 2020 Copyright: Fotografen
+   </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
