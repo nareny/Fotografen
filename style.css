@@ -1,0 +1,111 @@
+/*add a black background color to the top navigation*/
+
+
+label {
+    color: white;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+/* style the links inside the navigation bar*/
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color:black;
+}
+
+.topnav a.active {
+    background-color: #808080;
+    color:white;
+}
+
+#boks {
+    background-color: white;
+    text-align: center;
+    line-height: 20;
+}
+
+#tekst {
+    line-height: 20;
+    
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom:0;
+    left: 0;
+    padding:0;
+    background-color: #FFF8DC;
+    text-align: center;
+}
+
+#om {
+    position: fixed;
+    top:40%;
+    top:30%;
+    left:30%;
+    width:400em;
+    height: 22em;
+    margin-top: -2em;
+    margin-left: -15em;
+    border: 1px solid #808080;
+    background-color: #008080;
+}
+
+.container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+
+#accordion {
+    height: 500px;
+    width: 1000px;
+    position: absolute;
+    left:25%;
+    bottom: 20%;
+    margin-left: 500;
+}
+
+#ofte{
+    
+    position: absolute;
+    left:25%;
+    margin-left: 500;
+    bottom: 73%;
+}
+
+#søkebar {
+    width: 300px;
+    height: 15px;
+    top: 20px;
+    position: absolute;
+    right: 6%;
+}
+
+#klokke {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#ofte{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#accordion {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topnav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
